@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lecture 5 - CSS Selectors</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        /* Universal Selector */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Element Selector */
+        h3 {
+            color: #713b91;
+        }
+
+        /* Class Selector */
+        .highlight {
+            color: #d05c9d;
+            font-weight: bold;
+        }
+
+        /* ID Selector */
+        #special-text {
+            color: #9b5db5;
+            font-weight: bold;
+        }
+
+        /* Attribute Selector */
+        input[type="text"] {
+            border: 2px solid #9b5db5;
+            padding: 5px;
+        }
+
+        /* Grouping Selector */
+        h2, h4 {
+            color: #8b4fa8;
+        }
+
+        /* Descendant Combinator */
+        .descendant p {
+            color: #7a5c8a;
+        }
+
+        /* Child Combinator */
+        .child > p {
+            color: #b05c91;
+        }
+
+        /* Adjacent Sibling Combinator */
+        .adjacent + p {
+            color: #6f70a8;
+        }
+
+        /* General Sibling Combinator */
+        .general ~ p {
+            color: #8a609d;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Lecture 5: CSS Selectors</h1>
+
+    <h2>What are CSS Selectors?</h2>
+
+    <p>
+        CSS selectors are used to select HTML elements that we
+        want to style. They tell CSS which HTML elements should
+        receive specific styles.
+    </p>
+
+    <h2>1. Element Selector</h2>
+
+    <p>
+        The element selector selects HTML elements based on
+        their tag name.
+    </p>
+
+    <p>
+        For example, the h3 selector selects all h3 elements
+        and applies the specified style to them.
+    </p>
+
+    <h3>This heading uses the Element Selector.</h3>
+
+    <h2>2. Class Selector</h2>
+
+    <p>
+        The class selector selects HTML elements that have
+        a specific class attribute. A class selector starts
+        with a dot (.).
+    </p>
+
+    <p class="highlight">
+        This paragraph uses the Class Selector.
+    </p>
+
+    <h2>3. ID Selector</h2>
+
+    <p>
+        The ID selector selects one specific HTML element
+        using its id attribute. An ID selector starts with
+        a hash symbol (#).
+    </p>
+
+    <p id="special-text">
+        This paragraph uses the ID Selector.
+    </p>
+
+    <h2>4. Universal Selector</h2>
+
+    <p>
+        The universal selector is represented by an asterisk (*).
+        It selects all HTML elements on the webpage.
+    </p>
+
+    <p>
+        Example: * { box-sizing: border-box; }
+    </p>
+
+    <h2>5. Attribute Selector</h2>
+
+    <p>
+        The attribute selector selects HTML elements based
+        on their attributes or attribute values.
+    </p>
+
+    <p>
+        For example, input[type="text"] selects input elements
+        whose type attribute is text.
+    </p>
+
+    <input type="text" placeholder="Enter your name">
+
+    <h2>6. Grouping Selector</h2>
+
+    <p>
+        The grouping selector is used to apply the same style
+        to multiple HTML elements. Multiple selectors are
+        separated by a comma.
+    </p>
+
+    <h4>This heading is styled using the Grouping Selector.</h4>
+
+    <p>
+        Example: h2, h4 { color: purple; }
+    </p>
+
+    <h2>7. CSS Combinators</h2>
+
+    <p>
+        CSS combinators are used to define a relationship
+        between two or more HTML elements.
+    </p>
+
+    <h3>Descendant Combinator</h3>
+
+    <p>
+        The descendant combinator selects elements that are
+        inside another element. It is represented by a space.
+    </p>
+
+    <div class="descendant">
+        <p>This paragraph is inside the div.</p>
+    </div>
+
+    <h3>Child Combinator</h3>
+
+    <p>
+        The child combinator selects elements that are direct
+        children of another element. It is represented by >.
+    </p>
+
+    <div class="child">
+        <p>This paragraph is a direct child of the div.</p>
+    </div>
+
+    <h3>Adjacent Sibling Combinator</h3>
+
+    <p>
+        The adjacent sibling combinator selects the element
+        that comes immediately after another element.
+        It is represented by +.
+    </p>
+
+    <h4 class="adjacent">Heading</h4>
+    <p>This paragraph comes immediately after the heading.</p>
+
+    <h3>General Sibling Combinator</h3>
+
+    <p>
+        The general sibling combinator selects all matching
+        sibling elements that come after another element.
+        It is represented by ~.
+    </p>
+
+    <h4 class="general">Heading</h4>
+    <p>This is a sibling paragraph.</p>
+    <p>This is another sibling paragraph.</p>
+
+    <h2>Summary</h2>
+
+    <p>
+        In this lecture, we learned about CSS selectors.
+        We studied the Element Selector, Class Selector,
+        ID Selector, Universal Selector, Attribute Selector,
+        Grouping Selector, and CSS Combinators.
+    </p>
+
+    <br>
+
+    <a href="index.html">← Back to Home</a>
+
+</body>
+
+</html>

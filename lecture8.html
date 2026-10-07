@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lecture 8 - CSS3 Advanced Features</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logo.png">
+
+    <style>
+
+        /* Rounded Corners */
+        .rounded-box {
+            background-color: #f3e8ff;
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        /* Gradient */
+        .gradient-box {
+            padding: 30px;
+            background: linear-gradient(to right, #f3c4e8, #d9c2ff);
+        }
+
+        /* Shadow */
+        .shadow-box {
+            padding: 25px;
+            background-color: white;
+            box-shadow: 5px 5px 15px rgba(100, 70, 120, 0.3);
+        }
+
+        /* Opacity */
+        .opacity-box {
+            padding: 25px;
+            background-color: #9b5db5;
+            color: white;
+            opacity: 0.6;
+        }
+
+        /* 2D Transformation */
+        .transform-2d {
+            width: 150px;
+            padding: 20px;
+            background-color: #f3e8ff;
+            transform: rotate(5deg);
+        }
+
+        /* 3D Transformation */
+        .transform-3d {
+            width: 150px;
+            padding: 20px;
+            background-color: #e8d5f5;
+            transform: rotateY(25deg);
+        }
+
+        /* Web Font */
+        .web-font {
+            font-family: Georgia, serif;
+            font-size: 20px;
+        }
+
+        /* Icon Font */
+        .icon-font {
+            font-size: 30px;
+        }
+
+        /* CSS Custom Property */
+        :root {
+            --main-color: #8b4fa8;
+        }
+
+        .custom-property {
+            color: var(--main-color);
+            font-weight: bold;
+        }
+
+        /* Media Query */
+        .media-box {
+            padding: 25px;
+            background-color: #f3e8ff;
+        }
+
+        @media screen and (max-width: 600px) {
+
+            .media-box {
+                background-color: #ffdff0;
+            }
+
+        }
+
+        /* Vendor Prefix */
+        .vendor-box {
+            width: 200px;
+            padding: 20px;
+            background-color: #f3e8ff;
+
+            -webkit-transform: rotate(3deg);
+            -moz-transform: rotate(3deg);
+            transform: rotate(3deg);
+        }
+
+    </style>
+
+</head>
+
+<body class="lecture-page">
+
+    <h1>Lecture 8: CSS3 Advanced Features</h1>
+
+    <h2>Rounded Corners</h2>
+
+    <p>
+        The border-radius property is used to create rounded
+        corners on an HTML element.
+    </p>
+
+    <div class="rounded-box">
+        This box has rounded corners.
+    </div>
+
+
+    <h2>Gradients</h2>
+
+    <p>
+        Gradients are used to create a smooth transition between
+        two or more colors.
+    </p>
+
+    <div class="gradient-box">
+        This box uses a linear gradient.
+    </div>
+
+
+    <h2>Shadows</h2>
+
+    <p>
+        The box-shadow property is used to add a shadow around
+        an element.
+    </p>
+
+    <div class="shadow-box">
+        This box has a shadow.
+    </div>
+
+
+    <h2>Opacity</h2>
+
+    <p>
+        The opacity property controls the transparency of an element.
+        Its value can range from 0 to 1.
+    </p>
+
+    <div class="opacity-box">
+        This box has reduced opacity.
+    </div>
+
+
+    <h2>2D Transformation</h2>
+
+    <p>
+        2D transformations are used to move, rotate, scale,
+        or change the shape of an element in two dimensions.
+    </p>
+
+    <div class="transform-2d">
+        2D Transform
+    </div>
+
+
+    <h2>3D Transformation</h2>
+
+    <p>
+        3D transformations allow elements to be rotated or
+        changed in three-dimensional space.
+    </p>
+
+    <div class="transform-3d">
+        3D Transform
+    </div>
+
+
+    <h2>Web Fonts</h2>
+
+    <p>
+        Web fonts allow developers to use different fonts
+        on webpages instead of depending only on fonts
+        installed on the user's computer.
+    </p>
+
+    <p class="web-font">
+        This text demonstrates a different font style.
+    </p>
+
+
+    <h2>Icon Fonts</h2>
+
+    <p>
+        Icon fonts are fonts that contain symbols and icons
+        instead of normal letters.
+    </p>
+
+    <p class="icon-font">
+        ★ ♡ ✓
+    </p>
+
+
+    <h2>CSS Custom Properties</h2>
+
+    <p>
+        CSS custom properties are variables that store values
+        which can be reused in different CSS rules.
+    </p>
+
+    <p class="custom-property">
+        This text uses a CSS custom property.
+    </p>
+
+
+    <h2>Media Queries</h2>
+
+    <p>
+        Media queries are used to apply different CSS styles
+        according to the screen size or device.
+    </p>
+
+    <div class="media-box">
+        Resize the browser window to see the media query effect.
+    </div>
+
+
+    <h2>Vendor Prefixes</h2>
+
+    <p>
+        Vendor prefixes are used to provide support for
+        CSS features in specific web browsers.
+    </p>
+
+    <p>
+        Examples include -webkit- and -moz- prefixes.
+    </p>
+
+    <div class="vendor-box">
+        Vendor Prefix Example
+    </div>
+
+
+    <h2>Summary</h2>
+
+    <p>
+        In this lecture, we learned about CSS3 advanced features
+        including rounded corners, gradients, shadows, opacity,
+        2D and 3D transformations, web fonts, icon fonts,
+        CSS custom properties, media queries, and vendor prefixes.
+    </p>
+
+    <br>
+
+    <a href="index.html">← Back to Home</a>
+
+</body>
+
+</html>

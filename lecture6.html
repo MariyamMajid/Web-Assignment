@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lecture 6 - CSS Box Model and Layout</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        /* Color Example */
+        .color-example {
+            color: #713b91;
+            background-color: #f3e8ff;
+        }
+
+        /* Font Family Examples */
+        .serif-font {
+            font-family: Georgia, serif;
+        }
+
+        .sans-serif-font {
+            font-family: Arial, sans-serif;
+        }
+
+        .monospace-font {
+            font-family: "Courier New", monospace;
+        }
+
+        .cursive-font {
+            font-family: cursive;
+        }
+
+        .fantasy-font {
+            font-family: fantasy;
+        }
+
+        /* Font Properties */
+        .font-properties {
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        /* Text Alignment */
+        .text-alignment {
+            text-align: center;
+        }
+
+        /* Box Model Example */
+        .box-model {
+            width: 250px;
+            padding: 20px;
+            border: 5px solid #9b5db5;
+            margin: 30px;
+            background-color: #fff0f6;
+        }
+
+        /* Box Sizing */
+        .box-sizing-example {
+            width: 300px;
+            padding: 20px;
+            border: 5px solid #713b91;
+            box-sizing: border-box;
+            background-color: #f3e8ff;
+        }
+
+        /* Box Shadow */
+        .shadow-example {
+            padding: 20px;
+            background-color: white;
+            box-shadow: 5px 5px 15px rgba(120, 80, 140, 0.3);
+        }
+
+        /* Margin Collapsing */
+        .margin-one {
+            margin-bottom: 30px;
+        }
+
+        .margin-two {
+            margin-top: 20px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Lecture 6: CSS Box Model and Layout</h1>
+
+    <h2>CSS Layout and Styling</h2>
+
+    <p>
+        CSS provides different properties to control the appearance
+        and layout of elements on a webpage. These properties include
+        colors, fonts, text, and backgrounds.
+    </p>
+
+    <h2>Color Property</h2>
+
+    <p>
+        The color property is used to change the color of text.
+    </p>
+
+    <p class="color-example">
+        This text uses the CSS color property.
+    </p>
+
+    <h2>Background Color</h2>
+
+    <p>
+        The background-color property is used to change the
+        background color of an element.
+    </p>
+
+    <p style="background-color: #f3e8ff;">
+        This paragraph has a background color.
+    </p>
+
+    <h2>CSS Color Values</h2>
+
+    <p>
+        CSS supports different ways to specify colors.
+    </p>
+
+    <h3>Hexadecimal Colors</h3>
+
+    <p>
+        Hexadecimal colors use a six-digit code beginning with #.
+    </p>
+
+    <p>
+        Example: #713b91
+    </p>
+
+    <h3>RGB Colors</h3>
+
+    <p>
+        RGB stands for Red, Green, and Blue. It uses values
+        between 0 and 255.
+    </p>
+
+    <p>
+        Example: rgb(113, 59, 145)
+    </p>
+
+    <h3>RGBA Colors</h3>
+
+    <p>
+        RGBA is similar to RGB but also includes an alpha value
+        that controls transparency.
+    </p>
+
+    <p>
+        Example: rgba(113, 59, 145, 0.5)
+    </p>
+
+    <h2>Font Family</h2>
+
+    <p>
+        The font-family property is used to specify the type
+        of font used for text.
+    </p>
+
+    <p class="serif-font">
+        This is an example of a Serif font.
+    </p>
+
+    <p class="sans-serif-font">
+        This is an example of a Sans-serif font.
+    </p>
+
+    <p class="monospace-font">
+        This is an example of a Monospace font.
+    </p>
+
+    <p class="cursive-font">
+        This is an example of a Cursive font.
+    </p>
+
+    <p class="fantasy-font">
+        This is an example of a Fantasy font.
+    </p>
+
+    <h2>Font Properties</h2>
+
+    <p>
+        CSS provides different properties to control the appearance
+        of text.
+    </p>
+
+    <p class="font-properties">
+        This text demonstrates font size, font weight,
+        font style, and font family.
+    </p>
+
+    <h3>Font Size</h3>
+
+    <p>
+        The font-size property is used to change the size of text.
+    </p>
+
+    <h3>Font Weight</h3>
+
+    <p>
+        The font-weight property controls how thick or bold the text is.
+    </p>
+
+    <h3>Font Style</h3>
+
+    <p>
+        The font-style property is used to make text normal,
+        italic, or oblique.
+    </p>
+
+    <h2>Text Alignment</h2>
+
+    <p>
+        The text-align property is used to control the horizontal
+        alignment of text.
+    </p>
+
+    <p class="text-alignment">
+        This text is aligned in the center.
+    </p>
+
+    <h2>CSS Box Model</h2>
+
+    <p>
+        The CSS box model describes how every HTML element is
+        represented as a rectangular box.
+    </p>
+
+    <p>
+        The box model consists of four main parts:
+        content, padding, border, and margin.
+    </p>
+
+    <h3>1. Content</h3>
+
+    <p>
+        Content is the actual text, image, or other information
+        inside an element.
+    </p>
+
+    <h3>2. Padding</h3>
+
+    <p>
+        Padding is the space between the content and the border
+        of an element.
+    </p>
+
+    <h3>3. Border</h3>
+
+    <p>
+        Border surrounds the content and padding of an element.
+    </p>
+
+    <h3>4. Margin</h3>
+
+    <p>
+        Margin is the space outside the border of an element.
+        It creates space between elements.
+    </p>
+
+    <h2>Complete Box Model Example</h2>
+
+    <div class="box-model">
+        This is a complete CSS Box Model example.
+        It contains content, padding, border, and margin.
+    </div>
+
+    <h2>Box Sizing Property</h2>
+
+    <p>
+        The box-sizing property controls how the width and height
+        of an element are calculated.
+    </p>
+
+    <p>
+        With box-sizing: border-box, the specified width includes
+        the content, padding, and border.
+    </p>
+
+    <div class="box-sizing-example">
+        This box uses box-sizing: border-box.
+    </div>
+
+    <h2>Margin Collapsing</h2>
+
+    <p>
+        Margin collapsing occurs when the vertical margins of
+        two block-level elements meet. Instead of adding together,
+        the larger margin is used.
+    </p>
+
+    <p class="margin-one">
+        First paragraph with bottom margin.
+    </p>
+
+    <p class="margin-two">
+        Second paragraph with top margin.
+    </p>
+
+    <h2>Box Shadow</h2>
+
+    <p>
+        The box-shadow property is used to add a shadow around
+        an element's box.
+    </p>
+
+    <div class="shadow-example">
+        This box has a shadow effect.
+    </div>
+
+    <h2>Summary</h2>
+
+    <p>
+        In this lecture, we learned about CSS layout and styling,
+        colors, hexadecimal, RGB and RGBA colors, font families,
+        font size, font weight, font style, text alignment,
+        and the CSS box model. We also learned about content,
+        padding, border, margin, box-sizing, margin collapsing,
+        and box shadows.
+    </p>
+
+    <br>
+
+    <a href="index.html">← Back to Home</a>
+
+</body>
+
+</html>

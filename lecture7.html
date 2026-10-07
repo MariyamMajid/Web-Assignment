@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lecture 7 - Responsive Web Design</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        .responsive-box {
+            width: 80%;
+            margin: 20px auto;
+            padding: 30px;
+            background-color: #f3e8ff;
+            text-align: center;
+        }
+
+        .responsive-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Media Query */
+        @media screen and (max-width: 600px) {
+
+            .responsive-box {
+                width: 100%;
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Lecture 7: Responsive Web Design</h1>
+
+    <h2>What is Responsive Web Design?</h2>
+
+    <p>
+        Responsive Web Design is an approach used to make websites
+        adjust their layout and content according to the screen size
+        of the device.
+    </p>
+
+    <h2>Why is Responsive Design Important?</h2>
+
+    <p>
+        People access websites using different devices such as
+        computers, laptops, tablets, and mobile phones.
+        Responsive design helps a website look suitable on
+        different screen sizes.
+    </p>
+
+    <h2>Different Screen Sizes</h2>
+
+    <p>
+        A responsive website can adjust its layout according to
+        different screen sizes. This provides a better experience
+        for users on different devices.
+    </p>
+
+    <h2>Viewport</h2>
+
+    <p>
+        The viewport is the visible area of a webpage on a device.
+        The viewport meta tag helps the webpage adjust properly
+        to the width of the device.
+    </p>
+
+    <p>
+        Example:
+    </p>
+
+    <p>
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    </p>
+
+    <h2>Flexible Layout</h2>
+
+    <p>
+        A flexible layout allows webpage elements to change their
+        size and position according to the available screen space.
+    </p>
+
+    <div class="responsive-box">
+        This is a responsive box.
+    </div>
+
+    <h2>Responsive Images</h2>
+
+    <p>
+        Images should also adjust according to the screen size.
+        The max-width property can be used to prevent an image
+        from becoming wider than its container.
+    </p>
+
+    <h2>Media Queries</h2>
+
+    <p>
+        Media queries are used in CSS to apply different styles
+        according to the screen size or device conditions.
+    </p>
+
+    <p>
+        For example, a media query can change the size of headings
+        or the width of a box when the screen becomes smaller.
+    </p>
+
+    <h2>Example of a Media Query</h2>
+
+    <p>
+        The following media query changes the layout when the
+        screen width is 600 pixels or less.
+    </p>
+
+    <p>
+        @media screen and (max-width: 600px)
+    </p>
+
+    <h2>Summary</h2>
+
+    <p>
+        In this lecture, we learned about Responsive Web Design,
+        its importance, different screen sizes, viewport,
+        flexible layouts, responsive images, and media queries.
+    </p>
+
+    <br>
+
+    <a href="index.html">← Back to Home</a>
+
+</body>
+
+</html>
